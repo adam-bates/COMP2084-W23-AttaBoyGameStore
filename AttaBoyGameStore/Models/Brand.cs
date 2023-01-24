@@ -9,7 +9,5 @@ namespace AttaBoyGameStore.Models
         [Required]
         [MinLength(3)]
         public String Name { get; set; }
-
-        public String Other { get; set; }
     }
 }
