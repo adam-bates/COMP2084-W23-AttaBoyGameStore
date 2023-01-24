@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using AttaBoyGameStore.Models;
 
 namespace AttaBoyGameStore.Data
 {
@@ -9,5 +10,6 @@ namespace AttaBoyGameStore.Data
             : base(options)
         {
         }
+        public DbSet<AttaBoyGameStore.Models.Brand> Brand { get; set; }
     }
 }

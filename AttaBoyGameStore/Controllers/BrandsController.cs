@@ -18,6 +18,11 @@ namespace AttaBoyGameStore.Controllers
             return View(brands);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         public IActionResult ShopByBrand(String brand)
         {
             ViewData["Brand"] = brand;
