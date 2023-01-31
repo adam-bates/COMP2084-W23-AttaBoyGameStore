@@ -10,6 +10,8 @@ namespace AttaBoyGameStore.Data
             : base(options)
         {
         }
-        public DbSet<AttaBoyGameStore.Models.Brand> Brand { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
