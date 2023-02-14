@@ -15,6 +15,8 @@ namespace AttaBoyGameStore.Models
         [Range(1, 5)]
         public int Rating { get; set; }
 
+        [Range(0.01, 100000, ErrorMessage = "Invalid price")]
+        [DisplayFormat(DataFormatString = "{0:c}")]
         public decimal Price { get; set; }
 
         public String? Image { get; set; }
