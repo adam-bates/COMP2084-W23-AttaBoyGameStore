@@ -64,6 +64,13 @@
     </dl>
 </div>
 
+<form method="POST" action="/Shop/AddToCart">
+    <input type="hidden" id="ProductId" name="ProductId" value="@Model.Id" />
+
+    <button class="btn btn-primary">Add to Cart</button>
+    <input id="Quantity" name="Quantity" type="number" required value="1" min="1" max="999" />
+</form>
+
 @if (User.IsInRole("Administrator"))
 {
     <div>
